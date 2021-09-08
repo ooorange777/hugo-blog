@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#伪·影评",
+      "color": {
+        "a": 1,
+        "rgb": 6938706
+      }
+    },
+    {
+      "query": "tag:#伪·书评",
+      "color": {
+        "a": 1,
+        "rgb": 5405920
+      }
+    },
+    {
+      "query": "tag:#杂谈",
+      "color": {
+        "a": 1,
+        "rgb": 15402337
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.9,
+  "nodeSizeMultiplier": 0.791764705882353,
+  "lineSizeMultiplier": 1.54117647058824,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.4520168429358167,
+  "close": false
+}

@@ -1,0 +1,138 @@
+{
+  "main": {
+    "id": "65a20102b135e7b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "d474524bc2901441",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Free Guy.md",
+            "mode": "source"
+          }
+        },
+        "group": "8727cf5b2f45e7fc"
+      },
+      {
+        "id": "1dc26d85d55ca9db",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Free Guy.md",
+            "mode": "preview"
+          }
+        },
+        "group": "8727cf5b2f45e7fc"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9f19bfe7733f437d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1311f2c0f02fadd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40596400ca528b29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0849cfd3d9f1deac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#忽左忽右",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e64ebdd78f967cfa",
+    "type": "split",
+    "children": [
+      {
+        "id": "c749715270a89199",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "327643261dab2c41",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Free Guy.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "6e70222fb6667a90",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Free Guy.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "8543c3f865e6b127",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 178
+  },
+  "active": "d474524bc2901441",
+  "lastOpenFiles": [
+    "Free Guy.md",
+    "add breadcrumb to hugo.md",
+    "书店的记忆.md",
+    "我腦中的404.md",
+    "Join the Fediverse.md",
+    "对于在墙内平台上安利Fedi的看法.md",
+    "Zack Snyder's Justice League.md",
+    "Hello World.md",
+    "first blog.md",
+    "City Hunter (France).md"
+  ]
+}
