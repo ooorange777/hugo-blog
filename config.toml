@@ -27,7 +27,7 @@ buildExpired = true
 canonifyURLs = true
 
 enableRobotsTXT = true
-enableGitInfo   = false
+enableGitInfo   = true
 enableEmoji     = true
 enableMissingTranslationPlaceholders = true
 disableRSS     = false
@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-description = "a smiple blog"
+description = "记录书、影和一些想法"
   keywords = ""
   images = [""]
 
@@ -70,7 +70,7 @@ description = "a smiple blog"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
-  # gitUrl = ""
+  gitUrl = "/"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
