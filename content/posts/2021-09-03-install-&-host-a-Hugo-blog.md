@@ -1,7 +1,7 @@
 ---
 title: Hugo博客搭建、部署
 date: 2021-09-03T15:00:00+08:00
-tags: ['Hugo']
+tags: ['hugo']
 slug: 2021090301
 draft: false
 isCKJLanguage: true
