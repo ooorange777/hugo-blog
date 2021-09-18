@@ -124,7 +124,7 @@
 
     {{ if .Site.DisqusShortname }}
       {{ if not (eq .Params.Comments "false") }}
-        <div id="comments">
+        <div id="comments" color=#999>
           {{ template "_internal/disqus.html" . }}
         </div>
       {{ end }}
