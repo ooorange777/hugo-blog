@@ -90,7 +90,7 @@ disableReadOtherPosts = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-enableSharingButtons = true
+enableSharingButtons = false
 
   # Global language menu
   #
@@ -157,7 +157,7 @@ enableGlobalLanguageMenu = false
   [params.portrait]
      path     = "/img/ed.jpg"
      alt      = "Portrait"
-     maxWidth = "120px"
+     maxWidth = "160px"
 
   # Social icons
   # [[params.social]]
