@@ -4,19 +4,12 @@ date: 2021-05-06T10:10:03+08:00
 draft: false
 isCJKLanguage: true
 ---
-
-
-
-
-
 ## About me
 
 * 每天專心摸魚的社畜
 * 喜歡漫畫、偵探小説、獨自看電影
 * 説太多也不能讓別人更瞭解我
 * see you in space, cowboy
-
-
 
 ## About Notomorrow Club
 
