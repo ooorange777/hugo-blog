@@ -9,7 +9,7 @@ isCKJLanguage: true
 
 年纪大了记性不好，以防忘记，做个记录
 
-## 环境配置
+## 一、环境配置
 
 - 安装GoLang
   - 下载`msi文件`
@@ -17,31 +17,33 @@ isCKJLanguage: true
   ```bash
   go env #查看得到go的配置信息
   go version #查看go的版本号
+  ```
+```
 
 - 安装git
-  [Windows系统Git安装教程（详解Git安装过程）](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)
+  	[Windows系统Git安装教程（详解Git安装过程）](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)
 
 - 安装hugo
   - 下载适合版本的hugo
   - 打开cmd 
-    ```bash
+```bash
     cd D:\
     mkdir hugo
     cd hugo
     mkdir bin Sites
     set PATH=%PATH%;D:\hugo\bin
-    ```
+```
   - 使用`set PATH=%PATH%;D:\hugo\bin`失败的话，从控制面板>系统环境变量，进行添加
-  - 将`exe文件`解压到`D:\Hugo\bin\`，并重命名为`hugo.exe`
+  - 将*exe文件*解压到D:\Hugo\bin\ ，并重命名为*hugo.exe*
 
-## 建立本地站点
+## 二、建立本地站点
 
 ```bash
 cd D:\hugo\Sites
 hugo new site myblog
 ```
 
-## 添加主题
+## 三、添加主题
 
 ```bash
 git init #在站点根目录
@@ -50,7 +52,7 @@ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git theme
 
 **记得把主题内所有关于git的文件删除**，我不知道为什么，留着就没办法push，一直报错
 
-## 部署
+## 四、部署
 
 ### 部署到GitHub
 
@@ -86,10 +88,6 @@ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git theme
 ### 使用Nginx部署
 
 待尝试
-
-
-
-
 
 
 

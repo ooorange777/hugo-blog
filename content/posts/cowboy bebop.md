@@ -3,7 +3,7 @@ title: cowboy bebop
 date: 2021-05-06T15:56:00+08:00
 slug: 2021050603
 tags: 
-- 伪·影评
+- 动画
 draft: false
 isCJKLanguage: true
 ---

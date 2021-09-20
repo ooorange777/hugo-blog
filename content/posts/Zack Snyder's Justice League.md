@@ -3,7 +3,7 @@ title: Zack Snyder's Justice League
 date: 2021-05-06T15:57:58+08:00
 slug: 2021050602
 tags: 
-- 伪·影评
+- 电影
 draft: false
 isCJKLanguage: true
 ---
