@@ -3,15 +3,15 @@
 
 name = "Lucky7"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
+licenselink = "https://github.com/ooorange777/hugo-theme-lucky7/blob/master/LICENSE"
+description = "A simple GoHugo Theme for personal blog."
+homepage = "http://github.com/ooorange777/hugo-theme-lucky7/"
+tags = ["simple", "hugo", "blog"]
 features = []
-min_version = "0.41.0"
+min_version = "0.1.0"
 
 [author]
-  name = ""
+  name = "ooorange777"
   homepage = ""
 
 # If porting an existing theme

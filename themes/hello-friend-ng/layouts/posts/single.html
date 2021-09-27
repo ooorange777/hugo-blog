@@ -107,8 +107,8 @@
             <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
           </svg>
 
-          <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
-          {{ .GitInfo.Subject }}{{- . }} @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}
+          <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{- .GitInfo.AbbreviatedHash -}}</a>
+          {{ .GitInfo.Subject }}{{- . -}} @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}
         </p>
       {{- end }}
     </div>
@@ -124,7 +124,7 @@
 
     {{ if .Site.DisqusShortname }}
       {{ if not (eq .Params.Comments "false") }}
-        <div id="comments" color=#999>
+        <div id="comments">
           {{ template "_internal/disqus.html" . }}
         </div>
       {{ end }}

@@ -4,7 +4,7 @@ date: 2021-09-03T15:00:00+08:00
 tags: ['hugo']
 slug: 2021090301
 draft: false
-isCKJLanguage: true
+isCJKLanguage: true
 ---
 
 年纪大了记性不好，以防忘记，做个记录
@@ -18,7 +18,6 @@ isCKJLanguage: true
   go env #查看得到go的配置信息
   go version #查看go的版本号
   ```
-```
 
 - 安装git
   	[Windows系统Git安装教程（详解Git安装过程）](https://www.cnblogs.com/xueweisuoyong/p/11914045.html)
@@ -33,6 +32,7 @@ isCKJLanguage: true
     mkdir bin Sites
     set PATH=%PATH%;D:\hugo\bin
 ```
+
   - 使用`set PATH=%PATH%;D:\hugo\bin`失败的话，从控制面板>系统环境变量，进行添加
   - 将*exe文件*解压到D:\Hugo\bin\ ，并重命名为*hugo.exe*
 
