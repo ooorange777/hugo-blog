@@ -1,9 +1,9 @@
 baseURL = "https://ooorange777.github.io"
 title   = "NoTomorrow Club"
 languageCode = "en-us"
+theme = "hugo-theme-hello-friend-ng"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
-theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
@@ -29,7 +29,7 @@ canonifyURLs = true
 enableRobotsTXT = true
 enableGitInfo   = true
 enableEmoji     = true
-enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = false
 disableRSS     = false
 disableSitemap = false
 disable404     = false
@@ -54,19 +54,20 @@ disableHugoGeneratorInject = false
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
+  siteCreatedTime = "2021-05-05T20:17:43+00:00"
 
   # Metadata mostly used in document's head
   # 
-description = "记录书、影和一些想法"
+  description = "记录书、影和一些想法"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Will tomorrow come"
+  homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  # backgroundImage = "assets/images/background.jpg"
+  backgroundImage = "assets/images/background.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -74,7 +75,7 @@ description = "记录书、影和一些想法"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
-disableReadOtherPosts = false
+  disableReadOtherPosts = false
 
   # Enable theme toggle
   # 
@@ -90,19 +91,19 @@ disableReadOtherPosts = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-enableSharingButtons = false
+  enableSharingButtons = false
 
   # Global language menu
   #
   # Enables the global language menu.
   #
-enableGlobalLanguageMenu = false
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  #customCSS = []
-  #customJS  = []
+  customCSS = []
+  customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   #
@@ -117,10 +118,11 @@ enableGlobalLanguageMenu = false
     copyright = true
     author = true
 
-    topText = []
+    topText = [
+      "Made with &#10084; by ooorange"
+    ]
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://f.jymuoyu.com/@juju\">ooorange</a>"
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a> | Theme is <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
     ]
 
   # Colors for favicons
@@ -154,20 +156,36 @@ enableGlobalLanguageMenu = false
 
   # Uncomment this if you want a portrait on your start page
   #
-  [params.portrait]
-     path     = "/img/ed.jpg"
-     alt      = "Portrait"
-     maxWidth = "160px"
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
 
   # Social icons
-  # [[params.social]]
-  #  name = "twitter"
-  #  url  = "https://twitter.com/"
+  #[[params.social]]
+  # name = "twitter"
+  # url  = "https://twitter.com/"
+
+  #[[params.social]]
+  # name = "email"
+  # url  = "mailto:nobody@example.com"
+
+  #[[params.social]]
+  # name = "github"
+  # url  = "https://github.com/"
+
+  #[[params.social]]
+  # name = "linkedin"
+  # url  = "https://www.linkedin.com/"
+
+  #[[params.social]]
+  # name = "stackoverflow"
+  # url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.zh-cn]
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'  
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
