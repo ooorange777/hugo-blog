@@ -162,7 +162,7 @@ disableHugoGeneratorInject = false
   #
   [params.utteranc]
     enable = true
-    repo = "https://github.com/ooorange777/ooorange777.github.io" # your repo installed utterances
+    repo = "ooorange777/ooorange777.github.io" # your repo installed utterances
     issueTerm = "title"
     theme = "preferred-color-scheme"
 
