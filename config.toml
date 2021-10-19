@@ -67,7 +67,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  backgroundImage = "/img/background.jpg"
+  backgroundImage = "/img/18881_cowboy_bebop.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
