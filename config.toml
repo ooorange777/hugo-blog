@@ -5,10 +5,11 @@ theme = "hugo-theme-hello-friend-ng"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
 
+
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
+paginate  = 7
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -67,7 +68,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  backgroundImage = "assets/images/background.jpg"
+  # backgroundImage = "/img/background.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -154,12 +155,23 @@ disableHugoGeneratorInject = false
   # [params.commento]
   #   url = ""
 
+  # Utterances is a lightweight comments widget built on GitHub issues.
+  # Use GitHub issues for blog comments, wiki pages and more!
+  # website: https://utteranc.es
+  # Create a public repo and install the utterances app before using.
+  #
+  [params.utteranc]
+    enable = false
+    repo = "" # your repo installed utterances
+    issueTerm = "title"
+    theme = "preferred-color-scheme"
+
   # Uncomment this if you want a portrait on your start page
   #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  [params.portrait]
+    path     = "/img/image.jpg"
+    alt      = "Portrait"
+    maxWidth = "50px"
 
   # Social icons
   #[[params.social]]
