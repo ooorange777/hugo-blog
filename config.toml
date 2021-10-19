@@ -161,8 +161,8 @@ disableHugoGeneratorInject = false
   # Create a public repo and install the utterances app before using.
   #
   [params.utteranc]
-    enable = false
-    repo = "" # your repo installed utterances
+    enable = true
+    repo = "https://github.com/ooorange777/ooorange777.github.io" # your repo installed utterances
     issueTerm = "title"
     theme = "preferred-color-scheme"
 
