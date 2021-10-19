@@ -67,7 +67,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  backgroundImage = "/img/18881_cowboy_bebop.jpg"
+  # backgroundImage = "/img/18881_cowboy_bebop.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -157,7 +157,7 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   #
   # [params.portrait]
-  #   path     = "/img/image.jpg"
+  #   path     = "/img/ed.jpg"
   #   alt      = "Portrait"
   #   maxWidth = "50px"
 
