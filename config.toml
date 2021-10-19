@@ -8,7 +8,7 @@ hasCJKLanguage = true
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
+paginate  = 7
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -67,7 +67,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  backgroundImage = "assets/images/background.jpg"
+  backgroundImage = "/img/background.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
