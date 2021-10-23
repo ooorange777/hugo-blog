@@ -9,11 +9,11 @@ isCJKLanguage: true
 * 每天專心摸魚的社畜
 * 喜歡漫畫、偵探小説、獨自看電影
 * 説太多也不能讓別人更瞭解我
-* [see you in space... cowboy](https://ooorange.notion.site/See-you-in-space-cowboy-2690dbeba01a42899c3617526fafa69c)
+* [see you in space... cowboy](https://sedate-soarer-171.notion.site/See-you-in-space-cowboy-00a555c8ea6d49e2965b82c130ad3e91)
 
 ## About Notomorrow Club
 
-​	簡單的個人博客，記錄一些感想
+簡單的個人博客，記錄一些感想
 
 名稱來由：
 
