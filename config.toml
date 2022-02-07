@@ -165,7 +165,7 @@ disableHugoGeneratorInject = false
     repo = "ooorange777/ooorange777.github.io" # your repo installed utterances
     issueTerm = "title"
     label = "comment"
-    theme = "icy-dark"
+    theme = "preferred-color-scheme"
 
   # Uncomment this if you want a portrait on your start page
   #
