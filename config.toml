@@ -217,7 +217,7 @@ disableHugoGeneratorInject = false
     url        = "tags/"
     weight     = 2
   [[menu.main]]
-    identifier = "series"
-    name       = "Series"
-    url        = "series/"
+    identifier = "categoires"
+    name       = "Categoires"
+    url        = "categories/"
     weight     = 3
