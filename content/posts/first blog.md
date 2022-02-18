@@ -1,5 +1,5 @@
 ---
-title: "First blog"
+title: "Markdown testing"
 date: 2021-05-06T00:10:03+08:00
 slug: 2021050601
 tags:
@@ -10,9 +10,9 @@ isCJKLanguage: true
 
 Hello World!
 
-# Heading 1
-
 ## Heading 2
+
+### Heading 3
 
 > Quote
 
@@ -22,11 +22,13 @@ Hello World!
 * list
 * jifej
 
-*强調*
+斜体*强調*
 
-**著重**
+加粗**著重**
 
-`code`
+~删除~
+
+`inline code`
 
 ```javascript
 var person = {
