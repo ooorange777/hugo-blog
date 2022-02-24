@@ -189,7 +189,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
    name = "lastfm"
-   url  = "https://www.linkedin.com/"
+   url  = "https://www.last.fm/user/ooorange777/"
 
   [[params.social]]
    name = "letterboxd"
