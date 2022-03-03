@@ -67,6 +67,10 @@ disableHugoGeneratorInject = false
   #
   homeSubtitle = "Will tomorrow come?"
 
+  # hitokoto instead homeSubtitle of the index page.
+  #
+  hitokoto = true
+
   # Set a background for the homepage
   # backgroundImage = "/img/background.jpg"
 
@@ -165,7 +169,8 @@ disableHugoGeneratorInject = false
     repo = "ooorange777/ooorange777.github.io" # your repo installed utterances
     issueTerm = "title"
     label = "comment"
-    theme = "preferred-color-scheme"
+    theme = "github-light"
+    themeDark = "github-dark-orange"
 
   # Uncomment this if you want a portrait on your start page
   #
