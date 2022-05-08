@@ -24,12 +24,4 @@ isCJKLanguage: true
 
 * [my notebook](https://tech.notomorrow.club)
 
-* [goodreads](https://www.goodreads.com/ooorange777/)
-
-* [lastfm](https://www.last.fm/user/ooorange777/)
-
-* [letterboxd](https://letterboxd.com/ooorange/)
-
-* [trakt.tv](https://trakt.tv/users/ooorange777/)
-
-* [bangumi](https://bgm.tv/user/141150/)
+* [my tiddlywiki](https://library.notomorrow.club)
