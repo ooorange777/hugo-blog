@@ -20,8 +20,8 @@ isCJKLanguage: true
 
 ​我常常想人生就這樣結束，不需要迎接明天也挺好，我的人生建立在*不可持續經營*假設上
 
-## Find me here
+## More
 
 * [my notebook](https://tech.notomorrow.club)
 
-* [my tiddlywiki](https://library.notomorrow.club)
+* [a tinny library](https://library.notomorrow.club)
