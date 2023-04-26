@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  line-height: 1.6;
+  line-height: 1.8;
   letter-spacing: 0.08em;
   scroll-behavior: smooth;
 }
@@ -14,10 +14,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-family: 'EB Garamond', 'Noto Serif SC', 'ChironSungHK';
   font-display: auto;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.74;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
@@ -69,13 +69,11 @@ h6 {
 
 h1 {
   font-size: 2.625rem;
-  font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 }
 
 h2 {
   font-size: 1.625rem;
-  margin-top: 1.5em;
-  font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+  margin-top: 2em;
 }
 
 h3 {
@@ -193,8 +191,7 @@ figure {
 em, i, strong {
   // Default
   color: black;
-  font-family: "EB Garamond", Georgia, "Nimbus Roman No9 L", "Noto Serif CJK SC"， "Songti SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
-
+  
   @media (prefers-color-scheme: dark) {
     color: white;
   }
@@ -212,18 +209,34 @@ em, i, strong {
   }
 }
 
-em {
-  text-decoration: underline dotted;
-}
 
 code {
-  font-family: "Cascadia code", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", Consolas, "Lucida Console", "Andale Mono", Courier, monospace;
+  font-family: 'Anonymous Pro', 'Deja Vu Sans Mono', monospace;
   font-display: auto;
   font-feature-settings: normal;
   padding: 1px 6px;
   margin: 0 2px;
-  border-radius: 5px;
+  border-radius: 5px;  
   font-size: 0.95rem;
+
+  color: $light-background;
+
+    @media (prefers-color-scheme: dark) {
+      color: $dark-background;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      color: $light-background;
+    }
+  
+    [data-theme=dark] & {
+      color: $dark-background;
+    }
+  
+    [data-theme=light] & {
+      color: $light-background;
+    }
+
   // Default
   background: $light-background-secondary;
 
@@ -290,23 +303,33 @@ pre {
 }
 
 blockquote {
-  border-left: 3px solid #3eb0ef;
-  margin: 40px;
-  padding: 10px 20px;
+  border-left: 3px solid;
+  margin: 1rem 10px;
+  padding: .5em 10px;
+  font-weight: 250;
+  font-style: italic;
+  // Default color
+  border-left-color: $light-background-secondary;
+
+  @media (prefers-color-scheme: dark) {
+    border-left-color: $dark-background-secondary;
+  }
+
+  @media (prefers-color-scheme: light) {
+    border-left-color: $light-background-secondary;
+  }
+
+  [data-theme=dark] & {
+    border-left-color: $dark-background-secondary;
+  }
+
+  [data-theme=light] & {
+    border-left-color: $light-background-secondary;
+  }
 
   @media #{$media-size-phone} {
     margin: 10px;
     padding: 10px;
-  }
-
-  &:before {
-    content: "”";
-    font-family: "EB Garamond", Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
-    font-display: auto;
-    font-size: 3.875rem;
-    position: absolute;
-    left: -40px;
-    top: -20px;
   }
 
   p:first-of-type {
@@ -314,7 +337,39 @@ blockquote {
   }
 
   p:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    margin: line-height 0;
+    color: $light-color-secondary;
+    @media (prefers-color-scheme: dark) {
+      color: $dark-color-secondary;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: $light-color-secondary;
+    }
+
+    [data-theme=dark] & {
+      color: $dark-color-secondary;
+    }
+
+    [data-theme=light] & {
+      color: $light-color-secondary;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    cite {
+      &:before {
+        padding: 0 .5em;
+        content: "—";
+      }
+    }
   }
 }
 
@@ -338,6 +393,14 @@ ol ol {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+    .author {
+      text-align:right;
+    }
+
+    #hitokoto_text {
+      text-decoration: none;
+    }
 }
 
 .content {

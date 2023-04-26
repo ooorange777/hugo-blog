@@ -4,7 +4,6 @@
   text-decoration: none;
   font-weight: bold;
   font-display: auto;
-  font-family: "Cascadia code", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", Consolas, "Lucida Console", "Andale Mono", Courier, monospace;
 
   img {
     height: 44px;
@@ -20,12 +19,28 @@
 
   &__cursor {
     display: inline-block;
-    width: 10px;
+    width: 7px;
     height: 1rem;
-    background: #fe5186;
+    background: $light-background-secondary;
     margin-left: 5px;
     border-radius: 1px;
     animation: cursor 1s infinite;
+    
+    @media (prefers-color-scheme: dark) {
+      background: $dark-background-secondary;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      background: $light-background-secondary;
+    }
+  
+    [data-theme=dark] & {
+      background: $dark-background-secondary;
+    }
+  
+    [data-theme=light] & {
+      background: $light-background-secondary;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

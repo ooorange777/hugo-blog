@@ -1,9 +1,10 @@
 baseURL = "https://ooorange777.github.io"
-title   = "No-Tomorrow Club"
+title   = "NoTomorrow Club"
 languageCode = "en-us"
+theme = "hugo-theme-hello-friend-ng"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
-theme = "hello-friend-ng"
+
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
@@ -27,7 +28,7 @@ buildExpired = true
 canonifyURLs = true
 
 enableRobotsTXT = true
-enableGitInfo   = false
+enableGitInfo   = true
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
 disableRSS     = false
@@ -36,7 +37,7 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:year/:month/:slug/"
 
 [author]
   name = "ooorange"
@@ -54,23 +55,24 @@ disableHugoGeneratorInject = false
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
+  siteCreatedTime = "2021-05-05T20:17:43+00:00"
 
   # Metadata mostly used in document's head
   # 
-  description = "a smiple blog"
+  description = "记录书、影和一些想法"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Will tomorrow come"
+  homeSubtitle = "Will tomorrow come?"
 
   # Set a background for the homepage
-  # backgroundImage = "assets/images/background.jpg"
+  # backgroundImage = "/img/background.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
-  # gitUrl = ""
+  gitUrl = "https://github.com/ooorange777/hugo-blog/commit/"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
@@ -90,13 +92,13 @@ disableHugoGeneratorInject = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Global language menu
   #
   # Enables the global language menu.
   #
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -117,10 +119,11 @@ disableHugoGeneratorInject = false
     copyright = true
     author = true
 
-    topText = []
+    topText = [
+      "Made with &#10084; by ooorange"
+    ]
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://f.jymuoyu.com/@juju">ooorange</a>"
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a> | Theme is <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
     ]
 
   # Colors for favicons
@@ -135,7 +138,7 @@ disableHugoGeneratorInject = false
     logoText     = "$ cd /"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
-    # logoCursorDisabled = false
+    logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
     logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
@@ -152,20 +155,48 @@ disableHugoGeneratorInject = false
   # [params.commento]
   #   url = ""
 
+  # Utterances is a lightweight comments widget built on GitHub issues.
+  # Use GitHub issues for blog comments, wiki pages and more!
+  # website: https://utteranc.es
+  # Create a public repo and install the utterances app before using.
+  #
+  [params.utteranc]
+  enable = false
+  repo = "" # your repo installed utterances, eg. username/reponame 
+  issueTerm = "title"
+  label = ""
+  theme = "icy-dark"
+
   # Uncomment this if you want a portrait on your start page
   #
   # [params.portrait]
-     path     = "/img/ed.jpg"
-     alt      = "Portrait"
-     maxWidth = "50px"
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
 
   # Social icons
-  # [[params.social]]
-  #  name = "twitter"
-  #  url  = "https://twitter.com/"
+  #[[params.social]]
+  # name = "twitter"
+  # url  = "https://twitter.com/"
+
+  #[[params.social]]
+  # name = "email"
+  # url  = "mailto:nobody@example.com"
+
+  #[[params.social]]
+  # name = "github"
+  # url  = "https://github.com/"
+
+  #[[params.social]]
+  # name = "linkedin"
+  # url  = "https://www.linkedin.com/"
+
+  #[[params.social]]
+  # name = "stackoverflow"
+  # url  = "https://www.stackoverflow.com/"
 
 [languages]
-  [languages.en]
+  [languages.zh-cn]
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
@@ -177,7 +208,7 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-    url        = "post/"
+    url        = "posts/"
   [[menu.main]]
     identifier = "tags"
     name       = "Tags"

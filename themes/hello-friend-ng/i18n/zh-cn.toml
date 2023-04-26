@@ -25,14 +25,14 @@ other = "噢，找不到页面……"
 # posts/single.html
 #
 [readingTime]
-one   = "1分钟"
+one   = "一分钟"
 other = "{{ .Count }}分钟"
 
 [tableOfContents]
 other = "目录"
 
 [wordCount]
-one   = "1字"
+one   = "一字"
 other = "{{ .Count }}字"
 
 [lastModified]

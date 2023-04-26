@@ -10,9 +10,13 @@
             {{ end }}
 
             <h1>{{ .Site.Title }}</h1>
+            {{- if .Site.Params.hitokoto }}
+            {{ partial "hitokoto.html" . }}
+            {{ else }}
             {{- with .Site.Params.homeSubtitle }}
                 <p>{{.}}</p>
             {{- end }}
+            {{ end }}
 
             {{- with .Site.Params.social }}
                 <div>

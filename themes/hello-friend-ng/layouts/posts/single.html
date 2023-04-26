@@ -107,7 +107,7 @@
             <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
           </svg>
 
-          <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{- .GitInfo.AbbreviatedHash -}}</a>
+          <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
           {{ .GitInfo.Subject }} @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}
         </p>
       {{- end }}
@@ -135,5 +135,18 @@
       <div id="commento"></div>
     {{ end }}
 
+	{{ if .Site.Params.utteranc.enable }}
+      <div id="utterances"></div>
+      <script id="utterance" src="https://utteranc.es/client.js"
+      repo="{{ .Site.Params.utteranc.repo }}"
+      issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+      theme="{{ .Site.Params.utteranc.theme }}"
+      {{ with .Site.Params.utteranc.label }}
+        label="{{ . }}"
+      {{ end }}
+      crossorigin="anonymous"
+      async>
+      </script>
+	{{ end }}
   </main>
 {{ end }}
