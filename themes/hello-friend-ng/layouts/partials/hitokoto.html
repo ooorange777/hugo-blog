@@ -1,0 +1,17 @@
+<p class="hitokoto"><a href="#" id="hitokoto_text">:D LOADING...</a></p>
+<p class="author" id="hitokoto_author">:D LOADING...</p>
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn/?c=a&c=b&c=c&c=h&c=k&c=d');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto_text');
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto;
+	  var author = document.getElementById('hitokoto_author');
+	  author.innerText = '——' + (data.from_who || '') + "「" + (!!data.from ? data.from : "无名氏") + "」";
+    }
+  }
+  xhr.send();
+</script>

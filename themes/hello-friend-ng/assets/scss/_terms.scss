@@ -1,0 +1,23 @@
+.post-warp {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  margin: 20px auto;
+  @media #{$media-size-tablet} {
+    max-width: 600px;
+  }
+
+}
+.tag-cloud-tags {
+  margin: 10px 0;
+  
+  a {
+    display: inline-block;
+    position: relative;
+    margin: 5px 10px;
+    word-wrap: break-word;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    }
+}

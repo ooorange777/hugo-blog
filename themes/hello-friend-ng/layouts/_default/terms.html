@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+{{ $termName := .Data.Plural }}
+{{ $terms := .Data.Terms.ByCount }}
+{{ $length := len $terms }}
+{{ $type := .Type }}
+<!-- Categories Page -->
+<main class="posts">
+    <h1>{{ .Data.Plural | humanize }}</h1>
+{{ if and $.Site.Taxonomies.categories (eq $termName "categories") }}
+    {{ range .Data.Terms.ByCount }}
+        {{ $term := .Term }}
+        {{ $pages := .Pages }}
+        {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $term) }}
+        <ul class="posts-group">
+           <li class="post-year" > {{ $term | humanize}}  </li>
+		   
+		   <ul class="posts-list">
+                {{ range first 3 $pages }}   
+                <li class="post-item">
+                <a href="{{ .Permalink }}">
+					<span class="post-title">{{.Title}}</span>
+					<span class="post-day">
+						{{ if .Site.Params.dateformShort }}
+                            {{ .Date.Format .Site.Params.dateformShort }}
+                        {{ else }}
+                            {{ .Date.Format "Jan 2"}}
+                        {{ end }}
+					</span>
+				</a>
+                {{ end }}
+				{{ if gt (len $pages) 3 }}
+                    <span class="post-title"></span>
+                    <span class="post-day"><a href="{{ .Permalink }}">More  >></a></span>
+                </li> 
+               {{ end }}
+			</ul>
+            
+        </ul>
+        {{ end }}
+    {{ end }}
+<!-- //categories-card -->
+
+<!-- Tag cloud Page -->
+<div class="post-warp {{.Data.Plural}}">
+{{ else if and $.Site.Taxonomies.tags (eq $termName "tags") }}
+    <div class="tag-cloud-tags">
+    {{ range $.Site.Taxonomies.tags.ByCount }}
+        {{ if .Name }}
+        <a href="/tags/{{ .Name | urlize}}/"> {{ .Name }} <small>({{ .Count }})</small></a>
+        {{ end }}
+    {{end}}
+    </div>
+{{ end }}
+<!-- //tag-cloud-page -->
+
+</div>
+</main>
+{{end }}
